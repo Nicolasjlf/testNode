@@ -1,5 +1,7 @@
 const { porMarca } = require('../autos/autos');
 var autos = require('../autos/autos');
+//busco mi database sequalize
+var db = require('../database/models')
 const controller = {
 index: (req,res) => {
     res.send(autos.lista)
